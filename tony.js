@@ -6,11 +6,13 @@ function convert(input) {
     let myInfo = []
     for (let i = 1; i < input.length; i++) {
         let myCred = input[i].split('CRED:')
-        myInfo.push ({
-            myOtherInfo: myOtherInfo.push(myCred[0]),
-            myCredInfo: myCredInfo.push(myCred[1])
-        })
+        myOtherInfo.push(myCred[0])
+        myCredInfo.push(myCred[1])
     }
+    myInfo.push ({
+        myOtherInfo: myOtherInfo,
+        myCredInfo: myCredInfo
+    })
     console.log('my final data: ', myInfo)
 }
 
