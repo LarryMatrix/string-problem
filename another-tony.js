@@ -7,7 +7,7 @@ function convert(input) {
     let breakThr = null
 
     for (let i = 1; i < input.length; i++) {
-        breakThr = input[1].split(':')
+        breakThr = input[i].split(':')
         myObj[breakThr[0]] = breakThr[1]
         myObj[breakThr[2]] = breakThr[3]
         myObj[breakThr[4]] = breakThr[5]
