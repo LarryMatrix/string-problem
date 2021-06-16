@@ -3,11 +3,11 @@ function convert(input) {
     input = input.split('4::')
 
     let myInfo = []
-    let myObj = {}
-    let breakThr = null
 
     for (let i = 1; i < input.length; i++) {
-        breakThr = input[i].split(':')
+        let breakThr = input[i].split(':')
+        let myObj = {}
+
         myObj[breakThr[0]] = breakThr[1]
         myObj[breakThr[2]] = breakThr[3]
         myObj[breakThr[4]] = breakThr[5]
