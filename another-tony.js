@@ -1,5 +1,4 @@
 function convert(input) {
-    console.log('incoming: ', input)
     input = input.split('4::')
 
     let myInfo = []
