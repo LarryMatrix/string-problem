@@ -1,5 +1,4 @@
 function convert(input) {
-    // console.log('before: ', input);
     input = JSON.stringify(input)
     input = input.split('4::20:')
     let myOtherInfo = []
