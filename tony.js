@@ -1,19 +1,21 @@
 function convert(input) {
     input = JSON.stringify(input)
-    input = input.split('4::20:')
-    let myOtherInfo = []
-    let myCredInfo = []
-    let myInfo = []
-    for (let i = 1; i < input.length; i++) {
-        let myCred = input[i].split('CRED:')
-        myOtherInfo.push(myCred[0])
-        myCredInfo.push(myCred[1])
-    }
-    myInfo.push ({
-        myOtherInfo: myOtherInfo,
-        myCredInfo: myCredInfo
-    })
-    console.log('my final data: ', myInfo)
+
+    console.log('input', JSON.parse([input]))
+    // input = input.split('4::20:')
+    // let myOtherInfo = []
+    // let myCredInfo = []
+    // let myInfo = []
+    // for (let i = 1; i < input.length; i++) {
+    //     let myCred = input[i].split('CRED:')
+    //     myOtherInfo.push(myCred[0])
+    //     myCredInfo.push(myCred[1])
+    // }
+    // myInfo.push ({
+    //     myOtherInfo: myOtherInfo,
+    //     myCredInfo: myCredInfo
+    // })
+    // console.log('my final data: ', myInfo)
 }
 
 myStr =
