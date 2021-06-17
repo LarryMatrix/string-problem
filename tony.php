@@ -27,6 +27,7 @@ function split($message){
 	}
 	foreach ($info as $data) {
 		print_r($data);
+		// mbona hii sio echo 😂😂😂
 	}
 }
 ?>
